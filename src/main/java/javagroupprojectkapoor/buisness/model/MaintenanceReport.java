@@ -1,4 +1,4 @@
-package javagroupprojectkapoor;
+package javagroupprojectkapoor.buisness.model;
 
 /**
  * Represents a maintenance report for a vehicle.

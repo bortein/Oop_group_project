@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Transit Fleet Management</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Transit Fleet Management</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background: linear-gradient(135deg,#004d99,#0073e6);
+           color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; text-align:center; }
+    h1 { font-size:2.2rem; margin-bottom:0.5rem; }
+    p { font-size:1.1rem; margin:0 0 1.2rem; }
+    .buttons{ display:flex; gap:16px; flex-wrap:wrap; justify-content:center; }
+    a.button{ display:inline-block; padding:12px 20px; background:#ffcc00; color:#004d99; font-weight:bold;
+              text-decoration:none; border-radius:8px; transition:background .3s, transform .2s; }
+    a.button:hover{ background:#e6b800; transform:translateY(-2px); }
+  </style>
 </head>
 <body>
-    <h1>Welcome to the Public Transit Fleet Management System</h1>
-    <p><a href="reports">View Reports & Analytics</a></p>
+  <h1>Welcome to the Public Transit Fleet Management System</h1>
+  <p>Manage your fleet, track maintenance, and view analytics with ease.</p>
+
+  <div class="buttons">
+    <!-- These are RELATIVE to your webapp root -->
+    <a class="button" href="kapoor/reports/fuel">Fuel Usage</a>
+    <a class="button" href="kapoor/reports/maintenance">Maintenance</a>
+    <a class="button" href="kapoor/reports/operators">Operator Performance</a>
+  </div>
+
+  <!-- Optional: link to the combined page you already have -->
+  <!-- <p style="margin-top:1rem"><a class="button" href="kapoor/reports">All Reports</a></p> -->
 </body>
 </html>

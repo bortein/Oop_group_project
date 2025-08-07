@@ -1,6 +1,9 @@
-package javagroupprojectkapoor;
+package javagroupprojectkapoor.buisness;
 
-import java.util.*;
+import java.util.List;
+import javagroupprojectkapoor.buisness.model.FuelUsageReport;
+import javagroupprojectkapoor.buisness.model.MaintenanceReport;
+import javagroupprojectkapoor.buisness.model.OperatorStats;
 
 /**
  * Builds a Reports object containing fuel, maintenance, and operator reports.
@@ -12,7 +15,6 @@ public class ReportBuilder {
 
     /**
      * Sets the fuel usage reports.
-     *
      * @param fuelReports the fuel usage report list
      * @return this builder instance
      */
@@ -23,7 +25,6 @@ public class ReportBuilder {
 
     /**
      * Sets the maintenance reports.
-     *
      * @param maintenanceReports the maintenance report list
      * @return this builder instance
      */
@@ -34,7 +35,6 @@ public class ReportBuilder {
 
     /**
      * Sets the operator performance reports.
-     *
      * @param operatorReports the operator performance report list
      * @return this builder instance
      */
@@ -45,16 +45,13 @@ public class ReportBuilder {
 
     /**
      * Builds and returns a Reports object.
-     *
      * @return a new Reports object
      */
     public Reports build() {
         return new Reports(fuelReports, maintenanceReports, operatorReports);
     }
 
-    /**
-     * Holds all types of reports.
-     */
+    /** Holds all types of reports. */
     public static class Reports {
         private final List<FuelUsageReport> fuelReports;
         private final List<MaintenanceReport> maintenanceReports;
@@ -62,7 +59,6 @@ public class ReportBuilder {
 
         /**
          * Creates a new Reports object.
-         *
          * @param fuelReports list of fuel usage reports
          * @param maintenanceReports list of maintenance reports
          * @param operatorReports list of operator performance reports
@@ -75,25 +71,11 @@ public class ReportBuilder {
             this.operatorReports = operatorReports;
         }
 
-        /**
-         * Gets the fuel reports.
-         *
-         * @return fuel report list
-         */
+        /** @return fuel report list */
         public List<FuelUsageReport> getFuelReports() { return fuelReports; }
-
-        /**
-         * Gets the maintenance reports.
-         *
-         * @return maintenance report list
-         */
+        /** @return maintenance report list */
         public List<MaintenanceReport> getMaintenanceReports() { return maintenanceReports; }
-
-        /**
-         * Gets the operator performance reports.
-         *
-         * @return operator performance report list
-         */
+        /** @return operator performance report list */
         public List<OperatorStats> getOperatorReports() { return operatorReports; }
     }
 }

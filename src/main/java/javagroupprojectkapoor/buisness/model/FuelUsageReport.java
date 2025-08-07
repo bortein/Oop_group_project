@@ -1,4 +1,4 @@
-package javagroupprojectkapoor;
+package javagroupprojectkapoor.buisness.model;
 
 /**
  * Represents fuel usage data for a vehicle type.

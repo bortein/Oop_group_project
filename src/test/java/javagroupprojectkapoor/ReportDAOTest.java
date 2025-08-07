@@ -1,5 +1,10 @@
 package javagroupprojectkapoor;
 
+import javagroupprojectkapoor.data.DBConnection;
+import javagroupprojectkapoor.data.ReportDAO;
+import javagroupprojectkapoor.buisness.model.OperatorStats;
+import javagroupprojectkapoor.buisness.model.FuelUsageReport;
+import javagroupprojectkapoor.buisness.model.MaintenanceReport;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;

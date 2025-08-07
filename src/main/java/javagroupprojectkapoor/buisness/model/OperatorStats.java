@@ -1,4 +1,4 @@
-package javagroupprojectkapoor;
+package javagroupprojectkapoor.buisness.model;
 
 /**
  * Represents performance statistics for a transit operator.

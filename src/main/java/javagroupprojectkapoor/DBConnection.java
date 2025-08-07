@@ -1,4 +1,4 @@
-package javagroupprojectkapoor;
+package javagroupprojectkapoor.data;
 
 import java.sql.*;
 
