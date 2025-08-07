@@ -20,16 +20,16 @@
             <h1>Pick an Action</h1>
         </header>
         <main>
-            <form action="../" method="POST">
-                <button type="submit" name="operation" value="">Register Vehicle</button>
+            <form action="/GroupAssignment/LoginController" method="POST">
+                <button type="submit" name="operation" value="registerVehicle">Register Vehicle</button>
                 <br>
-                <button type="submit" name="operation" value="">Update Vehicle</button>
+                <button type="submit" name="operation" value="updateVehicle">Update Vehicle</button> <input type="text" name="updateNumber">
                 <br>
-                <button type="submit" name="operation" value="">Delete Vehicle</button>
+                <button type="submit" name="operation" value="deleteVehicle">Delete Vehicle</button>
                 <br>
-                <button type="submit" name="operation" value="">View Vehicle</button>
+                <button type="submit" name="operation" value="viewVehicle">View Vehicle</button>
                 <br>
-                <button type="submit" name="operation" value=""View All Vehicles</button>
+                <button type="submit" name="operation" value="viewAllVehicles">View All Vehicles</button>
             </form>
         </main>
     </body>

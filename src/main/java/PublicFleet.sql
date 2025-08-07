@@ -34,3 +34,6 @@ INSERT INTO Users(FullName, Email, Password, UserType)
 
 INSERT INTO Vehicles(IDNumber, VehicleType, FuelType, ConsumptionRate, MaxPassengers, Route)
     VALUES('Bus589', 'DIESEL_BUS', 'Diesel', 18.4, '50', 'Baseline to Bayshore');
+
+INSERT INTO Vehicles(IDNumber, VehicleType, FuelType, ConsumptionRate, MaxPassengers, Route)
+    VALUES('Bus600', 'ELECTRIC_LIGHT_RAIL', 'Electric', 20.5, '100', 'Toronto to Ottawa');
