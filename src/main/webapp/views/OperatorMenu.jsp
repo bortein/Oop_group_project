@@ -3,6 +3,8 @@
     Author     : Patricia Sunday
 --%>
 
+<%--store user from session attribute--%>
+<% transferobjects.UserDTO user = (transferobjects.UserDTO) session.getAttribute("user");%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -16,7 +18,12 @@
         </style>
     </head>
     <body>
-        <h1>Enter Your Details</h1>
+        <header>
+            <form action="/GroupAssignment/LoginController">
+                <button name="operation" value="logout">Logout</button>
+            </form>
+            <h1>Hello <%=user.getName()%>!</h1>
+        </header>
         <form action="../ManagerServlet" method="POST">
             <button type="submit" name="operation" onclick="window.location.href='<%--add path here--%>'">GPS Tracking</button>
             <br>

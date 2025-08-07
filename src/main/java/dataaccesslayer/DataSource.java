@@ -6,8 +6,6 @@ package dataaccesslayer;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -32,9 +30,6 @@ public class DataSource {
     
     /**the database url*/
     private String url;
-    
-    /**the database connection*/
-    private Connection conn;
     
     /**the singleton for DataSource*/
     private static DataSource instance;
@@ -70,15 +65,8 @@ public class DataSource {
     /**to retrieve the database connection using database properties
      * @return the database connection
      */
-    public Connection getConnection(){
-        try{
-            //create new connection if one doesnt exist
-            if(conn == null){
-               conn = DriverManager.getConnection(url, username, password);         
-            }
-        }
-        catch(SQLException e){e.printStackTrace();}
-        return conn;
+    public Connection getConnection() throws SQLException{
+        return DriverManager.getConnection(url, username, password);
     }
     
     /**to retrieve the singleton for this class through which the database connection will be accessed

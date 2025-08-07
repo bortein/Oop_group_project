@@ -57,7 +57,9 @@ public class FrontController extends HttpServlet {
                 
                 attemptRegistration(user, request, response);
                 break;
-                
+            case "logout":
+                attemptLogout(request, response);
+                break;
         }
     }
 
@@ -123,17 +125,17 @@ public class FrontController extends HttpServlet {
                 
                 //redirect based on user type
                 if(user.getType() == UserDTO.UserType.MANAGER){
-                    request.getRequestDispatcher("views/ManagerMenu.jsp").forward(request,response);
+                    request.getRequestDispatcher("/views/ManagerMenu.jsp").forward(request,response);
                 }
                 else{
-                    request.getRequestDispatcher("views/OperatorMenu.jsp").forward(request,response);
+                    request.getRequestDispatcher("/views/OperatorMenu.jsp").forward(request,response);
                 }
             }
             else{
                 //store error message if invalid login
                 request.setAttribute("error", "Login is invalid, please try again.");
                 //reload login
-                request.getRequestDispatcher("Index.jsp").forward(request,response);
+                request.getRequestDispatcher("/Index.jsp").forward(request,response);
             }
         }
         catch(ValidationException e){e.printStackTrace(); e.getMessage();}
@@ -159,17 +161,32 @@ public class FrontController extends HttpServlet {
                 
                 //redirect based on user type
                 if(user.getType() == UserDTO.UserType.MANAGER){
-                    request.getRequestDispatcher("views/ManagerMenu.jsp").forward(request,response);
+                    request.getRequestDispatcher("/views/ManagerMenu.jsp").forward(request,response);
                 }
                 else{
-                    request.getRequestDispatcher("views/OperatorMenu.jsp").forward(request,response);
+                    request.getRequestDispatcher("/views/OperatorMenu.jsp").forward(request,response);
                 }
             }
             else{//if invalid login
                 //reload page
-                request.getRequestDispatcher("views/RegistrationForm.jsp").forward(request,response);
+                request.getRequestDispatcher("/views/RegistrationForm.jsp").forward(request,response);
             }
         }
         catch(ValidationException e){e.printStackTrace(); e.getMessage();}
+    }
+    
+    /**Ends login session and redirects to login.jsp
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    public void attemptLogout(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        session.invalidate();
+        
+        //reload login
+        request.getRequestDispatcher("/Index.jsp").forward(request,response);
     }
 }

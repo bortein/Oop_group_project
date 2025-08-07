@@ -52,24 +52,26 @@ public class UserDAOImpl implements UserDAO {
      */
     @Override
     public UserDTO getUserByEmail(String email){
-        Connection conn = DataSource.getInstance().getConnection();
-        String query = "SELECT FROM Users WHERE Email = ?)";
-        UserDTO foundUser = null;
+        String query = "SELECT * FROM Users WHERE Email = ?";
+        UserDTO foundUser = new UserDTO();
         
-        try(PreparedStatement ps = conn.prepareStatement(query);){
+        try(Connection conn = DataSource.getInstance().getConnection();
+                PreparedStatement ps = conn.prepareStatement(query);){
             ps.setString(1, email);
             
             try(ResultSet rs = ps.executeQuery();){
-                //create user object using found user from query
-                foundUser.setId(rs.getInt("ID"));
-                foundUser.setName(rs.getString("FullName"));
-                foundUser.setPassword(rs.getString("Password"));
-                foundUser.setType(UserDTO.UserType.valueOf(rs.getString("UserType"))); //get enum value from db to use corresponding enum of userdto 
+                if(rs.next()){
+                    //create user object using found user from query
+                    foundUser.setId(rs.getInt("ID"));
+                    foundUser.setName(rs.getString("FullName"));
+                    foundUser.setPassword(rs.getString("Password"));
+                    foundUser.setType(UserDTO.UserType.valueOf(rs.getString("UserType"))); //get enum value from db to use corresponding enum of userdto 
+                }
             }
         }
-        catch(SQLException e){e.getMessage();}
+        catch(SQLException e){e.printStackTrace();}
         
-        return foundUser;
+        return null;
     }
     
     /**validates a user's login by input email & password
@@ -103,7 +105,7 @@ public class UserDAOImpl implements UserDAO {
             }
         }
         catch(SQLException e){e.printStackTrace();}
-        
+         
         return null;
     }
 }
