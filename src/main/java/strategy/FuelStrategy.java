@@ -1,6 +1,6 @@
-package ErenUgur.Strategy;
+package strategy;
 
-import ErenUgur.model.Vehicle;
+import transferObjects.Vehicle;
 
 public interface FuelStrategy {
     double calculateFuelUsage(Vehicle vehicle, double distance);

@@ -1,8 +1,8 @@
-package ErenUgur.Servlet;
+package viewLayer;
 
-import ErenUgur.DAO.FuelDAO;
+import dataAccessLayer.FuelDAO;
 import java.util.List;
-import ErenUgur.model.FuelLog;
+import transferObjects.FuelLog;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

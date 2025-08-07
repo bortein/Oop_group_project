@@ -1,5 +1,5 @@
 // Vehicle.java
-package ErenUgur.model;
+package transferObjects;
 
 public class Vehicle {
     private int vehicleId;

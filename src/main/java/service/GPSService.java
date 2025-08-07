@@ -1,9 +1,9 @@
-package ErenUgur.Service;
+package service;
 
-import ErenUgur.DAO.GPSDAO;
-import ErenUgur.model.GPSLocation;
-import ErenUgur.Observer.GPSObserver;
-import ErenUgur.Observer.GPSSubject;
+import dataAccessLayer.GPSDAO;
+import transferObjects.GPSLocation;
+import observer.GPSObserver;
+import observer.GPSSubject;
 
 import java.sql.Timestamp;
 import java.util.List;

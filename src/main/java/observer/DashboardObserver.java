@@ -1,7 +1,10 @@
-// DashboardObserver.java
-package ErenUgur.Observer;
+package observer;
 
-import ErenUgur.model.GPSLocation;
+// DashboardObserver.java
+
+
+import observer.GPSObserver;
+import transferObjects.GPSLocation;
 
 public class DashboardObserver implements GPSObserver {
     @Override

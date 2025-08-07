@@ -1,6 +1,6 @@
-package ErenUgur.DAO;
+package dataAccessLayer;
 
-import ErenUgur.model.GPSLocation;
+import transferObjects.GPSLocation;
 import dataAccessLayer.DBConnection;
 
 import java.sql.*;

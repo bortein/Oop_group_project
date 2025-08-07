@@ -1,9 +1,9 @@
 // FuelService.java
-package ErenUgur.Service;
+package service;
 
-import ErenUgur.model.Vehicle;
-import ErenUgur.Strategy.FuelStrategy;
-import ErenUgur.DAO.FuelDAO;
+import transferObjects.Vehicle;
+import strategy.FuelStrategy;
+import dataAccessLayer.FuelDAO;
 
 import java.sql.Timestamp;
 

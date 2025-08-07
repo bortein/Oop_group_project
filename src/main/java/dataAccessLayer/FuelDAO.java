@@ -1,11 +1,11 @@
 // FuelDAO.java
-package ErenUgur.DAO;
+package dataAccessLayer;
 
 import java.sql.*;
 import dataAccessLayer.DBConnection;
 import java.util.ArrayList;
 import java.util.List;
-import ErenUgur.model.FuelLog;
+import transferObjects.FuelLog;
 
 public class FuelDAO {
 

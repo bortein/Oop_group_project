@@ -1,4 +1,4 @@
-package ErenUgur.model;
+package transferObjects;
 
 import java.sql.Timestamp;
 
