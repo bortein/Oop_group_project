@@ -7,7 +7,7 @@
 
     <servlet>
         <servlet-name>ReportController</servlet-name>
-        <servlet-class>javagroupprojectkapoor.ReportController</servlet-class>
+        <servlet-class>ErenUgur.Servlet.FuelServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>

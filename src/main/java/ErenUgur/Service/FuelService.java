@@ -2,7 +2,7 @@
 package ErenUgur.Service;
 
 import dataAccessLayer.DBConnection;
-import model.Vehicle;
+import ErenUgur.model.Vehicle;
 import ErenUgur.Strategy.FuelStrategy;
 import ErenUgur.DAO.FuelDAO;
 

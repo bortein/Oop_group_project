@@ -1,7 +1,7 @@
 // LightRailEnergyStrategy.java
 package ErenUgur.Strategy;
 
-import model.Vehicle;
+import ErenUgur.model.Vehicle;
 
 public class LightRailEnergyStrategy implements FuelStrategy {
     @Override

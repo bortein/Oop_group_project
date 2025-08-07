@@ -4,9 +4,9 @@ package ErenUgur.Servlet;
 import ErenUgur.Observer.DashboardObserver;
 import ErenUgur.Service.GPSService;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
 import java.io.IOException;
 
 @WebServlet("/gps")
