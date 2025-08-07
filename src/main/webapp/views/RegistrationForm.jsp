@@ -16,29 +16,33 @@
         </style>
     </head>
     <body>
-        <h1>Enter Your Details</h1>
-        <form action="../LoginController" method="POST">
-            <div class="textfield">
-                <label for="name">Full Name</label>
-                <input type="text" name="name" id="name" placeholder="Full Name">
-            </div>
-            <div class="textfield">
-                <label for="email">Email Address</label>
-                <input type="text" name="email" id="email" placeholder="Email">
-            </div>
-            <div class="textfield">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password">
-            </div>
-            <div class="textfield">
-                <label for="usertype">User Type</label>
-                <select name="usertype">
-                    <option value="MANAGER">MANAGER</option>
-                    <option value="OPERATOR">OPERATOR</option>
-                </select>
-            </div>
-            <br>
-            <button type="submit" name="operation" value="register">Sign Up</button>
-        </form>
+        <header>
+            <h1>Enter Your Details</h1>
+        </header>
+        <main>
+            <form action="../LoginController" method="POST">
+                <div class="textfield">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Full Name">
+                </div>
+                <div class="textfield">
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="textfield">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="textfield">
+                    <label for="usertype">User Type</label>
+                    <select name="usertype">
+                        <option value="MANAGER">MANAGER</option>
+                        <option value="OPERATOR">OPERATOR</option>
+                    </select>
+                </div>
+                <br>
+                <button type="submit" name="operation" value="register">Sign Up</button>
+            </form>
+        </main>
     </body>
 </html>

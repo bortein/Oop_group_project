@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>User Registration</title>
+        <title>Manager Menu</title>
         <style>
           form *{margin-top: 2px; font-size: 1.2rem}
           .textfield{display:flex; flex-direction: column;}
@@ -24,12 +24,14 @@
             </form>
             <h1>Hello <%=user.getName()%>!</h1>
         </header>
-        <form action="../ManagerServlet" method="POST">
-            <button type="submit" name="operation" onclick="window.location.href='VehicleMenu'">Manage Vehicles</button>
-            <br>
-            <button type="submit" name="operation" onclick="window.location.href='<%--add path here--%>'">GPS Tracking</button>
-            <br>
-            <button type="submit" name="operation" onclick="window.location.href='<%--add path here--%>'">Performance Dashboard</button>
-        </form>
+        <main>
+            <form action="../LoginController" method="POST">
+                <button type="submit" name="operation" value="manageVehicles">Manage Vehicles</button>
+                <br>
+                <button type="submit" name="operation" value="<%--add value here--%>">GPS Tracking</button>
+                <br>
+                <button type="submit" name="operation" value="<%--add value here--%>">Performance Dashboard</button>
+            </form>
+        </main>
     </body>
 </html>

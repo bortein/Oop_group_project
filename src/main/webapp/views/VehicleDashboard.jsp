@@ -8,7 +8,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>User Registration</title>
+        <title>Vehicle Dashboard</title>
         <style>
           form *{margin-top: 2px; font-size: 1.2rem}
           .textfield{display:flex; flex-direction: column;}
@@ -16,17 +16,21 @@
         </style>
     </head>
     <body>
-        <h1>Enter Your Details</h1>
-        <form action="../ManagerServlet" method="POST">
-            <button type="submit" name="operation" onclick="window.location.href='<%--add path here--%>'">Register Vehicle</button>
-            <br>
-            <button type="submit" name="operation" onclick="window.location.href='<%--add path here--%>'">Update Vehicle</button>
-            <br>
-            <button type="submit" name="operation" onclick="window.location.href='<%--add path here--%>'">Delete Vehicle</button>
-            <br>
-            <button type="submit" name="operation" onclick="window.location.href='<%--add path here--%>'">View Vehicle</button>
-            <br>
-            <button type="submit" name="operation" onclick="window.location.href='<%--add path here--%>'">View All Vehicles</button>
-        </form>
+        <header>
+            <h1>Pick an Action</h1>
+        </header>
+        <main>
+            <form action="../" method="POST">
+                <button type="submit" name="operation" value="">Register Vehicle</button>
+                <br>
+                <button type="submit" name="operation" value="">Update Vehicle</button>
+                <br>
+                <button type="submit" name="operation" value="">Delete Vehicle</button>
+                <br>
+                <button type="submit" name="operation" value="">View Vehicle</button>
+                <br>
+                <button type="submit" name="operation" value=""View All Vehicles</button>
+            </form>
+        </main>
     </body>
 </html>

@@ -17,25 +17,28 @@
         </style>
     </head>
     <body>
-        <h1>Welcome, Enter Login Details</h1>
-        <form action="/GroupAssignment/LoginController" method="POST">
-            <div class="textfield">
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" placeholder="Enter email here">
-            </div>
-            <div class="textfield">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter password here">
-            </div>
-            <br>
-            <button type="submit" name="operation" value="login">Login</button>
-            <button type="button" onclick="window.location.href='views/RegistrationForm.jsp'">Sign Up</button>
-            
-            <%--show error message if it exists--%>
-            <%if(request.getAttribute("error") != null){%>
-                <p style="color:red;"><%= request.getAttribute("error") %></p>
-            <%}%>
+        <header>
+            <h1>Welcome, Enter Login Details</h1>
+        </header>
+        <main>
+            <form action="/GroupAssignment/LoginController" method="POST">
+                <div class="textfield">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter email here">
+                </div>
+                <div class="textfield">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password here">
+                </div>
+                <br>
+                <button type="submit" name="operation" value="login">Login</button>
+                <button type="button" onclick="window.location.href='views/RegistrationForm.jsp'">Sign Up</button>
 
-        </form>
+                <%--show error message if it exists--%>
+                <%if(request.getAttribute("error") != null){%>
+                    <p style="color:red;"><%= request.getAttribute("error") %></p>
+                <%}%>
+            </form>
+        </main>
     </body>
 </html>
