@@ -1,5 +1,6 @@
 package javagroupprojectkapoor;
 
+import DataAccessLayer.DBConnection;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
