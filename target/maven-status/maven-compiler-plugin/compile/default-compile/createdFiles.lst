@@ -1,0 +1,15 @@
+dataaccesslayer\VehicleDAOImpl.class
+transferobjects\VehicleDTO$VehicleType.class
+controllerPkg\FrontController.class
+dataaccesslayer\DataSource.class
+businesslayer\VehicleValidation.class
+transferobjects\UserDTO.class
+dataaccesslayer\UserDAOImpl.class
+dataaccesslayer\VehicleDAO.class
+businesslayer\UserBusinessLogic.class
+businesslayer\ValidationException.class
+dataaccesslayer\UserDAO.class
+businesslayer\VehicleBusinessLogic.class
+businesslayer\UserValidation.class
+transferobjects\VehicleDTO.class
+transferobjects\UserDTO$UserType.class
