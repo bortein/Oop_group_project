@@ -1,8 +1,9 @@
 package ErenUgur.Service;
 
-import ErenUgur.DAO.FuelDAO;
-import ErenUgur.Strategy.FuelStrategy;
-import ErenUgur.model.Vehicle;
+import service.FuelService;
+import dataAccessLayer.FuelDAO;
+import strategy.FuelStrategy;
+import transferObjects.Vehicle;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

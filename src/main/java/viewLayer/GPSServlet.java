@@ -1,7 +1,7 @@
-package ErenUgur.Servlet;
+package viewLayer;
 
-import ErenUgur.DAO.GPSDAO;
-import ErenUgur.model.GPSLocation;
+import dataAccessLayer.GPSDAO;
+import transferObjects.GPSLocation;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;

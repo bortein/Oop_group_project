@@ -1,7 +1,8 @@
 package ErenUgur.Service;
 
-import ErenUgur.model.GPSLocation;
-import ErenUgur.Observer.GPSObserver;
+import service.GPSService;
+import transferObjects.GPSLocation;
+import observer.GPSObserver;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

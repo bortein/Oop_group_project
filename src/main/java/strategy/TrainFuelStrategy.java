@@ -1,6 +1,6 @@
-package ErenUgur.Strategy;
+package strategy;
 
-import ErenUgur.model.Vehicle;
+import transferObjects.Vehicle;
 
 public class TrainFuelStrategy implements FuelStrategy {
 

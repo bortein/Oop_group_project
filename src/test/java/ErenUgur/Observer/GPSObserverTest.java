@@ -1,6 +1,7 @@
 package ErenUgur.Observer;
 
-import ErenUgur.model.GPSLocation;
+import observer.GPSObserver;
+import transferObjects.GPSLocation;
 import org.junit.jupiter.api.Test;
 
 import java.sql.Timestamp;

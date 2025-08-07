@@ -1,6 +1,7 @@
-package ErenUgur.Strategy;
+package strategy;
 
-import ErenUgur.model.Vehicle;
+import strategy.FuelStrategy;
+import transferObjects.Vehicle;
 
 public class LightRailEnergyStrategy implements FuelStrategy {
 

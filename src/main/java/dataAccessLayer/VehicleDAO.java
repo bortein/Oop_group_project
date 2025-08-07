@@ -1,6 +1,6 @@
-package ErenUgur.DAO;
+package dataAccessLayer;
 
-import ErenUgur.model.Vehicle;
+import transferObjects.Vehicle;
 import dataAccessLayer.DBConnection;
 import java.sql.*;
 import java.util.ArrayList;
