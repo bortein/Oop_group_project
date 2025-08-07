@@ -1,7 +1,8 @@
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\model\FuelLog.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\Service\GPSService.java
-C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\com\mycompany\javagroupprojectkapoorsidhu\JakartaRestConfiguration.java
+C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\javagroupprojectkapoor\buisness\model\FuelUsageReport.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\businesslayer\VehicleValidation.java
+C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\javagroupprojectkapoor\DBConnection.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\Strategy\BusFuelStrategy.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\controllerPkg\FrontController.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\dataaccesslayer\VehicleDAO.java
@@ -12,7 +13,6 @@ C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\Observer\GPSSubject.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\dataaccesslayer\UserDAOImpl.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\Strategy\TrainFuelStrategy.java
-C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\com\mycompany\javagroupprojectkapoorsidhu\resources\JakartaEE8Resource.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\Observer\DashboardObserver.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\Strategy\LightRailEnergyStrategy.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\dataaccesslayer\DataSource.java
@@ -20,10 +20,12 @@ C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\dataaccesslayer\UserDAO.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\DAO\GPSDAO.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\DAO\FuelDAO.java
+C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\javagroupprojectkapoor\buisness\model\OperatorStats.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\transferobjects\VehicleDTO.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\businesslayer\UserValidation.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\DAO\VehicleDAO.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\model\GPSLocation.java
+C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\javagroupprojectkapoor\buisness\ReportBuilder.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\dataaccesslayer\VehicleDAOImpl.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\ErenUgur\Servlet\FuelServlet.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\businesslayer\VehicleBusinessLogic.java
@@ -31,3 +33,6 @@ C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\businesslayer\ValidationException.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\dataaccesslayer\DBConnection.java
 C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\businesslayer\UserBusinessLogic.java
+C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\javagroupprojectkapoor\presentation\ReportController.java
+C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\javagroupprojectkapoor\data\ReportDAO.java
+C:\Users\patri\All School\3Summer2025\CST8288 OOP-Design\Assignment\A2\Patricia.Sunday.Assignment2\GroupAssignment\src\main\java\javagroupprojectkapoor\buisness\model\MaintenanceReport.java

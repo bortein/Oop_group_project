@@ -7,27 +7,120 @@
 <% transferobjects.UserDTO user = (transferobjects.UserDTO) session.getAttribute("user");%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Operator Menu</title>
-        <style>
-          form *{margin-top: 2px; font-size: 1.2rem}
-          .textfield{display:flex; flex-direction: column;}
-          body{background-color: #F0FAFF; font-family: sans-serif; margin:20%;}
-        </style>
-    </head>
-    <body>
-        <header>
-            <form action="/GroupAssignment/LoginController">
-                <button name="operation" value="logout">Logout</button>
-            </form>
-            <h1>Hello <%=user.getName()%>!</h1>
-        </header>
-        <main>
-            <button type="submit" name="operation" value="<%--add value here--%>">GPS Tracking</button>
-            <br>
-            <button type="submit" name="operation" value="<%--add value here--%>">Performance Dashboard</button>
-        </main>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transit Manager Menu</title>
+    <style>
+        body {
+            margin: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+        nav {
+            background-color: #0056b3;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+        }
+        nav a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 8px;
+            padding: 40px 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        main h2 {
+            font-weight: 700;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+        main p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        .btn-group {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            font-size: 1rem;
+            box-shadow: 0 3px 7px rgba(0, 123, 255, 0.4);
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Public Transit Fleet Management System
+    </header>
+
+    <nav>
+        <a href="gps">GPS Tracking</a>
+        <a href="maintenance">Maintenance</a>
+        <form action="/GroupAssignment/LoginController">
+            <button class="btn" name="operation" value="logout">Logout</button>
+        </form>
+    </nav>
+
+    <main>
+        <h2>Welcome <%=user.getName()%></h2>
+        <p>
+            Manage and monitor your public transit fleet with ease. Access real-time GPS tracking, fuel
+            levels, maintenance alerts, and detailed reports — all in one platform.
+        </p>
+
+        <div class="btn-group">
+            <a href="" class="btn">GPS Tracking</a>
+            <a href="" class="btn" onclick="window.location.href='manager/maintenance.jsp'">Maintenance</a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Public Transit Fleet Management System — Algonquin College Project
+    </footer>
+</body>
 </html>

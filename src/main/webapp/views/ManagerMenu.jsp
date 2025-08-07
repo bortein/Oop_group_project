@@ -120,9 +120,9 @@
             <button class="btn" type="submit" name="operation" value="manageVehicles">Manage Vehicles</button>
         </form>
             <a href="fuel" class="btn">Fuel Monitoring</a>
-            <a href="gps" class="btn">GPS Tracking</a>
-            <a href="maintenance" class="btn">Maintenance</a>
-            <a href="reports" class="btn">Reports</a>
+            <a href="" class="btn">GPS Tracking</a>
+            <a class="btn" onclick="window.location.href='manager/maintenance.jsp'">Maintenance</a>
+            <a class="btn" onclick="window.location.href='manager/reports.jsp'">Reports</a>
         </div>
     </main>
 

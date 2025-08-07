@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.*, javagroupprojectkapoor.*" %>
+<%@ page import="javagroupprojectkapoor.buisness.mode.FuelUsageReport" %>
 <html>
 <head>
     <title>Transit Reporting & Analytics</title>
