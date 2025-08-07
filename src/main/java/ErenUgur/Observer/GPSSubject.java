@@ -1,7 +1,7 @@
 // GPSSubject.java
 package ErenUgur.Observer;
 
-import model.GPSLocation;
+import ErenUgur.model.GPSLocation;
 import java.util.ArrayList;
 import java.util.List;
 
