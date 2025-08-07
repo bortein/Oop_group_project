@@ -3,5 +3,7 @@
   <!-- Define Persistence Unit -->
   <persistence-unit name="my_persistence_unit">
     <class>ErenUgur.DAO.VehicleDAO</class>
+    <class>ErenUgur.model.FuelLog</class>
+    <class>ErenUgur.Test.ObserverTest</class>
   </persistence-unit>
 </persistence>

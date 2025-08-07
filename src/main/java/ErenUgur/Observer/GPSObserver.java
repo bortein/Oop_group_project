@@ -1,7 +1,7 @@
 // GPSObserver.java
 package ErenUgur.Observer;
 
-import model.GPSLocation;
+import ErenUgur.model.GPSLocation;
 
 public interface GPSObserver {
     void update(GPSLocation location);

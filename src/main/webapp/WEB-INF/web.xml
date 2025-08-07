@@ -6,13 +6,21 @@
          version="3.0">
 
     <servlet>
-        <servlet-name>ReportController</servlet-name>
+        <servlet-name>FuelServlet</servlet-name>
         <servlet-class>ErenUgur.Servlet.FuelServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>ReportController</servlet-name>
-        <url-pattern>/reports</url-pattern>
+        <servlet-name>FuelServlet</servlet-name>
+        <url-pattern>/FuelLog</url-pattern>
     </servlet-mapping>
+<servlet>
+    <servlet-name>GPSServlet</servlet-name>
+    <servlet-class>ErenUgur.Servlet.GPSServlet</servlet-class>
+</servlet>
 
+<servlet-mapping>
+    <servlet-name>GPSServlet</servlet-name>
+    <url-pattern>/gps</url-pattern>
+</servlet-mapping>
 </web-app>
